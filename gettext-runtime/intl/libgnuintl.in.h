@@ -385,7 +385,7 @@ namespace std { using ::libintl_vfprintf; }
 
 # if !((defined printf && defined _GL_STDIO_H) || defined GNULIB_overrides_printf) /* don't override gnulib */
 #  undef printf
-#  if defined __NetBSD__ || defined __BEOS__ || defined __CYGWIN__ || defined __MINGW32__
+#  if defined __NetBSD__ || defined __BEOS__ || defined __CYGWIN__ || defined __MINGW32__ || defined __MINGW64__
 /* Don't break __attribute__((format(printf,M,N))).
    This redefinition is only possible because the libc in NetBSD, Cygwin,
    mingw does not have a function __printf__.
