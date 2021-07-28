@@ -17,11 +17,10 @@ dnl along with this program.  If not, see <https://www.gnu.org/licenses/>.
 dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.64])
-AC_INIT
+. $srcdir/version.sh
+AC_INIT([libtextstyle], [$VERSION_NUMBER])
 AC_CONFIG_SRCDIR([version.sh])
 AC_CONFIG_AUX_DIR([build-aux])
-. $srcdir/version.sh
-gl_INIT_PACKAGE([libtextstyle], [$VERSION_NUMBER])
 AM_INIT_AUTOMAKE([1.13 silent-rules])
 AC_CONFIG_HEADERS([config.h])
 
