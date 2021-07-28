@@ -18,7 +18,7 @@ dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.64])
 AC_INIT([gettext-runtime],
-	m4_esyscmd([../build-aux/git-version-gen ../.tarball-version]),
+	0.21,
 	[bug-gettext@gnu.org])
 AC_CONFIG_SRCDIR([intl/dcigettext.c])
 AC_CONFIG_AUX_DIR([../build-aux])
