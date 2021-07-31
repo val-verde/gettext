@@ -35,7 +35,7 @@ SUFFIXES =
 AM_CPPFLAGS = \
   -Ignulib-lib -I$(srcdir)/gnulib-lib \
   -DLOCALEDIR=\"$(localedir)\" -DLOCALE_ALIAS_PATH=\"$(aliaspath)\" \
-  -DLIBDIR=\"$(libdir)\" -DBUILDING_LIBINTL
+  -DLIBDIR=\"$(libdir)\" -DBUILDING_LIBINTL -DBUILDING_DLL
 
 if WOE32
 # On mingw, disable the declarations of *printf functions as aliases to the
