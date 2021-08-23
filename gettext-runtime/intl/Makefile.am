@@ -402,13 +402,7 @@ libintl_la_DEPENDENCIES    = gnulib-lib/libgnu.la $(WOE32_LIBADD)
 libgnuintl_la_LIBADD       = gnulib-lib/libgnu.la $(WOE32_LIBADD)
 libgnuintl_la_DEPENDENCIES = gnulib-lib/libgnu.la $(WOE32_LIBADD)
 
-# langprefs.c (_nl_language_preferences_win32_95) uses functions from
-# advapi32.dll.
-if WINDOWS_NATIVE
-INTL_WINDOWS_LIBS = -ladvapi32
-else
 INTL_WINDOWS_LIBS =
-endif
 
 # Libtool's library version information for libintl.
 # Before making a gettext release, you must change this according to the
