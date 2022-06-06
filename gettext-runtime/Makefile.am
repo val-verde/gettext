@@ -27,7 +27,7 @@ SUBDIR_libasprintf = libasprintf
 else
 SUBDIR_libasprintf =
 endif
-SUBDIRS = intl intl-java intl-csharp gnulib-lib $(SUBDIR_libasprintf) src po m4
+SUBDIRS = intl intl-java intl-csharp gnulib-lib $(SUBDIR_libasprintf) src m4
 
 EXTRA_DIST = BUGS
 
