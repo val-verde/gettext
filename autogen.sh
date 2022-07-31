@@ -35,6 +35,8 @@
 #                       - as a speedup, if the set of gnulib modules did not
 #                         change since the last time you ran this script.
 
+sh autopull.sh
+
 # Nuisances.
 (unset CDPATH) >/dev/null 2>&1 && unset CDPATH
 
